@@ -72,7 +72,7 @@ async def pdisk_uploader(bot, message):
     
 async def pdisk_up(link):
     if ('pdisk' in link or 'kuklink' in link or 'kofilink' in link or 'cofilink' in link or 'bit' in link or 'enter' in link or 'mypower' in link or 'dplinks' in link or 'primedisk' in link or 'mdisk' in link or 'dropxer' in link or 'dood' in link or 'telegra' in link):
-        url = 'http://shrinkforearn.in/api'
+        url = 'https://short.gproinfo.com/api'
         params = {'api': API_KEY, 'url': link}
     
         async with aiohttp.ClientSession() as session:
@@ -129,8 +129,8 @@ async def remove_username(new_List):
 
 async def addFooter(str):
     footer = """
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-        
+
+
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
     return str + footer
